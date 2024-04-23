@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Formulario</title>
+
+</head>
+<body>
+
+    <div id="principal">
+    <form method="get" action="sucesso.html">
+        <div class="campo">
+        <label for="nome">Nome:</label>
+        <input
+         name="nome"
+         type="text"
+         placeholder="Ex: Joao da Silva"
+         id="nome"
+         minlength="2"
+         maxlength="255"
+         pattern="^[a-zA-Z\u00C0-\u00FF ]+$"
+         required/>
+        </div>
+
+        <br/>
+
+        <div class="campo">
+        <label idade="idade" for="idade"> Idade: </label>
+        <input
+         name="idade"
+         type="number"
+         max="100"
+         min="15"
+         required />
+
+    </div>
+
+         <br/>
+
+         <div class="campo">
+         <label for="email">Email:</label>
+         <input name="email"
+         type="text"
+         placeholder="Ex: @gmail.com"
+         required/>
+         </div>
+
+        <br/>
+        
+        <div class="campo">
+        <label for="senha">Senha:</label>
+        <input name="senha" type="password"
+        placeholder="Ex:12345"
+         required/>
+        </div>
+    
+    <br/>
+
+        <button class="botao">Enviar</button>
+    </div>
+
+    </form>
+
+    <script src="js/estilo.js"></script>
+</body>
+</html>

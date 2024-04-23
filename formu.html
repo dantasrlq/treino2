@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+
+</head>
+<body>
+    <div>
+   
+
+    <form>
+        <form method="get" action="sucesso.html">
+        <div id="principal">
+        <div class="campo">
+        <label for="usuario">Usuario:</label>
+        <input type="text"
+         pattern="^[a-zA-Z\u00C0-\u00FF ]+$"
+         minlength="2"
+         maxlength="20"
+         name="usuario"
+         id="usuario"
+         required />
+        </div>
+
+         <div class="campoS">
+            <label for="senha">Senha:</label>
+            <input type="text"
+             name="password"
+             id="password"
+             required>
+        </div>
+
+        <div class="check">
+        <input type="checkbox" id="manter" name="manter" value="Manter-se me conectado">
+        <label for="manter">Manter-se me conectado</label>
+        </div>
+        
+        <div class="cadastro">
+        <a href="">Esqueci minha senha</a>
+        <p> Nao tem Login? <a href="cadastro.html">Cadastre-se</a> </p>
+        </div>
+    
+        <button class="botao">Enviar</button>
+
+        </div>
+    </form>
+    
+</body>
+</html>

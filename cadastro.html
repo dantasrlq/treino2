@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo1"> Cadastro </h1>
+        </div>
+    
+        <form>
+            <form method="get" action="formu.html">
+            <div id="principal">
+            <div class="campo2">
+            <label for="nome">Nome</label>
+            <input type="text"
+             placeholder="Ex: Lucas Dantas"
+             minlength="2"
+             maxlength="255"
+             pattern="^[a-zA-Z\u00C0-\u00FF ]+$"
+             name="nome"
+             id="nome"
+             required />
+            </div>
+    
+             <div class="campo2">
+                <label for="senha">Senha:</label>
+                <input type="text"
+                 placeholder="Ex:12345"
+                 name="password"
+                 id="password"
+                 required>
+            </div>
+
+            <div class="campo2">
+                <label for="email">Email:</label>
+                <input type="text"
+                 placeholder="Ex: @gmail.com"
+                 name="email"
+                 id="emial"
+                 required>
+            </div>
+
+            <div class="campo2">
+                <label for="telefone">Tele:</label>
+                <input type="tel"
+                 placeholder="(11) 9902-8922"
+                 minlength="0"
+                 name="telefone"
+                 id="telefone"
+                 required>
+            </div>
+
+            <div class="campo2">
+                <label for="data">data de nascimento:</label>
+                <input type="date"
+                 name="data"
+                 id="data"
+                 required>
+            </div>
+
+            <button class="botao2">Cadastrar</button>
+
+        </form>
+    
+</body>
+</html>
